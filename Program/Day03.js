@@ -8,7 +8,7 @@ const partOne = function(input) {
         let letters = input[i].split("");
 
         const firstHalf = letters.slice(0,letters.length/2);
-        const lastHalf = letters.slice(letters.length/2)
+        const lastHalf = letters.slice(letters.length/2);
         
         for (let k = 0; k < firstHalf.length; k++) {
             let letterCode = "";
@@ -17,9 +17,9 @@ const partOne = function(input) {
                 letterCode = firstHalf[k].charAt(0).charCodeAt(0);
                 
                 if (firstHalf[k].toLowerCase() === firstHalf[k]) {
-                    sum = (letterCode - 97) + 1
+                    sum = (letterCode - 97) + 1;
                 } else {
-                    sum = (letterCode - 65) + 27
+                    sum = (letterCode - 65) + 27;
                 }
                 
                 result += sum;
@@ -45,9 +45,9 @@ const partTwo = function(input) {
                 letterCode = letters[k].charAt(0).charCodeAt(0);
                 
                 if (letters[k].toLowerCase() === letters[k]) {
-                    sum = (letterCode - 97) + 1
+                    sum = (letterCode - 97) + 1;
                 } else {
-                    sum = (letterCode - 65) + 27
+                    sum = (letterCode - 65) + 27;
                 }
                 
                 result += sum;
