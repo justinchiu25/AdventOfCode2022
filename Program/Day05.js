@@ -2,12 +2,7 @@ const fs = require("fs");
 const data = fs.readFileSync("../Input/Day05.txt", "utf-8");
 const input = data.split(/\r?\n/);
 
-//Split beginning crates by splitting "/[] /+"
-//Figure out how many rows there are
-//First row with numbers?
-
 const partOne = function(input) {
-    //Find first line that contains the numbers or empty space
     let numberLine = 8;
     let letterStack = [];
 
